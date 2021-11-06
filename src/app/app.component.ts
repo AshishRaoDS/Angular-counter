@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'counter';
+  countnumber=0;
+
+  resetBtn(){
+    this.countnumber=0;
+  }
+  increaseBtn(){
+    this.countnumber=this.countnumber+1
+  }
+
+  decreaseBtn(){
+    this.countnumber=this.countnumber-1
+  }
 }
